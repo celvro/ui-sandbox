@@ -1,0 +1,63 @@
+{
+  "name": "ui-sandbox",
+  "version": "1.0.0",
+  "homepage": "http://celvro.github.io/ui-sandbox",
+  "scripts": {
+    "build": "webpack",
+    "start": "tt-serve --config webpack.config",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "terra"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-jest": "^23.0.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-terra": "^1.0.0",
+    "html-webpack-plugin": "^3.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.1.0",
+    "load-json-file": "^5.0.0",
+    "rimraf": "^2.6.1",
+    "stylelint": "^9.0.0",
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "stylelint-order": "^0.8.1",
+    "stylelint-scss": "^3.0.0",
+    "stylelint-suitcss": "^3.0.0",
+    "terra-toolkit": "^4.1.0",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "cerner-consumer-theme": "git://github.cerner.com/terra/cerner-consumer-theme.git",
+    "gh-pages": "^1.2.0",
+    "material-ui": "^0.20.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.0.0",
+    "react-test-renderer": "^16.2.0",
+    "terra-action-footer": "^1.13.0",
+    "terra-action-header": "^1.12.0",
+    "terra-arrange": "^2.17.0",
+    "terra-base": "^3.15.0",
+    "terra-button": "^2.16.0",
+    "terra-card": "^2.15.0",
+    "terra-content-container": "^2.16.0",
+    "terra-grid": "^4.15.0",
+    "terra-heading": "^2.15.0",
+    "terra-list": "^2.20.0",
+    "terra-text": "^2.15.0",
+    "terra-toggle-section-header": "^1.18.0"
+  }
+}
