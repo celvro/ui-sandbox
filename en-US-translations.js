@@ -26,6 +26,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _reactIntl.addLocaleData)(_en2.default);
 
 var messages = {
+  "blue": "This is the blue section.",
+  "green": "Translation for green.",
+  "red": "Translation for red.",
   "Terra.actionHeader.back": "Back",
   "Terra.actionHeader.close": "Close",
   "Terra.actionHeader.maximize": "Maximize",

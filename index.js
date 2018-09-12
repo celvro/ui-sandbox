@@ -4216,7 +4216,7 @@ var IntlMessageFormat = __webpack_require__(/*! ./lib/main */ "./node_modules/in
 
 // Add all locale data to `IntlMessageFormat`. This module will be ignored when
 // bundling for the browser with Browserify/Webpack.
-__webpack_require__(/*! ./lib/locales */ 1);
+__webpack_require__(/*! ./lib/locales */ 2);
 
 // Re-export `IntlMessageFormat` as the CommonJS default exports with all the
 // locale data registered, and with English set as the default locale. Define
@@ -4893,7 +4893,7 @@ var IntlRelativeFormat = __webpack_require__(/*! ./lib/main */ "./node_modules/i
 
 // Add all locale data to `IntlRelativeFormat`. This module will be ignored when
 // bundling for the browser with Browserify/Webpack.
-__webpack_require__(/*! ./lib/locales */ 2);
+__webpack_require__(/*! ./lib/locales */ 3);
 
 // Re-export `IntlRelativeFormat` as the CommonJS default exports with all the
 // locale data registered, and with English set as the default locale. Define
@@ -24680,7 +24680,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormattedPlural", function() { return FormattedPlural; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormattedMessage", function() { return FormattedMessage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormattedHTMLMessage", function() { return FormattedHTMLMessage; });
-/* harmony import */ var _locale_data_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../locale-data/index.js */ 0);
+/* harmony import */ var _locale_data_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../locale-data/index.js */ 1);
 /* harmony import */ var _locale_data_index_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_locale_data_index_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var intl_messageformat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! intl-messageformat */ "./node_modules/intl-messageformat/index.js");
 /* harmony import */ var intl_messageformat__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(intl_messageformat__WEBPACK_IMPORTED_MODULE_1__);
@@ -31443,6 +31443,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+__webpack_require__(/*! cerner-consumer-theme */ "./node_modules/cerner-consumer-theme/index.js");
+
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
@@ -31451,13 +31453,15 @@ var _terraBase = __webpack_require__(/*! terra-base */ "./node_modules/terra-bas
 
 var _terraBase2 = _interopRequireDefault(_terraBase);
 
-__webpack_require__(/*! cerner-consumer-theme */ "./node_modules/cerner-consumer-theme/index.js");
+__webpack_require__(/*! ./App.css */ "./src/App.css");
+
+var _AnchorLinkTest = __webpack_require__(/*! ./components/anchor/AnchorLinkTest */ "./src/components/anchor/AnchorLinkTest.jsx");
+
+var _AnchorLinkTest2 = _interopRequireDefault(_AnchorLinkTest);
 
 var _Home = __webpack_require__(/*! ./components/home/Home */ "./src/components/home/Home.jsx");
 
 var _Home2 = _interopRequireDefault(_Home);
-
-__webpack_require__(/*! ./App.css */ "./src/App.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31482,8 +31486,9 @@ var App = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         _terraBase2.default,
-        { className: 'custom-App', locale: 'en' },
-        _react2.default.createElement(_Home2.default, null)
+        { className: 'custom-App', locale: 'en-US' },
+        _react2.default.createElement(_Home2.default, null),
+        _react2.default.createElement(_AnchorLinkTest2.default, null)
       );
     }
   }]);
@@ -31492,6 +31497,59 @@ var App = function (_Component) {
 }(_react.Component);
 
 exports.default = App;
+
+/***/ }),
+
+/***/ "./src/components/anchor/AnchorLinkTest.jsx":
+/*!**************************************************!*\
+  !*** ./src/components/anchor/AnchorLinkTest.jsx ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _terraBase = __webpack_require__(/*! terra-base */ "./node_modules/terra-base/lib/Base.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AnchorLinkTest = function AnchorLinkTest(_ref) {
+  var intl = _ref.intl;
+  return _react2.default.createElement(
+    _react2.default.Fragment,
+    null,
+    _react2.default.createElement(
+      'div',
+      { style: { height: 1000, backgroundColor: 'blue', margin: 20 }, id: 'blue' },
+      intl.formatMessage({ id: 'blue' })
+    ),
+    _react2.default.createElement(
+      'div',
+      { style: { height: 1000, backgroundColor: 'green', margin: 20 }, id: 'green' },
+      intl.formatMessage({ id: 'green' })
+    ),
+    _react2.default.createElement(
+      'div',
+      { style: { height: 1000, backgroundColor: 'red', margin: 20 }, id: 'red' },
+      intl.formatMessage({ id: 'red' })
+    )
+  );
+};
+
+AnchorLinkTest.propTypes = {
+  intl: _terraBase.intlShape
+};
+
+exports.default = (0, _terraBase.injectIntl)(AnchorLinkTest);
 
 /***/ }),
 
@@ -31601,7 +31659,7 @@ _reactDom2.default.render(_react2.default.createElement(
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*****************************************!*\
   !*** ../locale-data/index.js (ignored) ***!
   \*****************************************/
@@ -31612,7 +31670,7 @@ _reactDom2.default.render(_react2.default.createElement(
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*******************************!*\
   !*** ./lib/locales (ignored) ***!
   \*******************************/
@@ -31623,7 +31681,7 @@ _reactDom2.default.render(_react2.default.createElement(
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!*******************************!*\
   !*** ./lib/locales (ignored) ***!
   \*******************************/
