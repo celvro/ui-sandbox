@@ -31528,6 +31528,23 @@ var AnchorLinkTest = function AnchorLinkTest(_ref) {
     _react2.default.Fragment,
     null,
     _react2.default.createElement(
+      'a',
+      { href: '#blue' },
+      'Blue'
+    ),
+    _react2.default.createElement('br', null),
+    _react2.default.createElement(
+      'a',
+      { href: '#green' },
+      'Green'
+    ),
+    _react2.default.createElement('br', null),
+    _react2.default.createElement(
+      'a',
+      { href: '#red' },
+      'Red'
+    ),
+    _react2.default.createElement(
       'div',
       { style: { height: 1000, backgroundColor: 'blue', margin: 20 }, id: 'blue' },
       intl.formatMessage({ id: 'blue' })
