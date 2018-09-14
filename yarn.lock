@@ -6801,6 +6801,10 @@ markdown-table@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.2.tgz#c78db948fa879903a41bce522e3b96f801c63786"
 
+marked@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.5.0.tgz#9e590bad31584a48ff405b33ab1c0dd25172288e"
+
 marked@^0.3.6:
   version "0.3.19"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
@@ -10320,7 +10324,7 @@ terra-arrange@^2.17.0, terra-arrange@^2.20.0:
     terra-doc-template "^1.12.0"
     terra-icon "^2.19.0"
 
-terra-base@^3.10.0, terra-base@^3.15.0:
+terra-base@^3.10.0:
   version "3.19.0"
   resolved "https://registry.yarnpkg.com/terra-base/-/terra-base-3.19.0.tgz#a40cb6838cb67d083118b90f07e9d26d53aeda8e"
   dependencies:
@@ -10328,6 +10332,15 @@ terra-base@^3.10.0, terra-base@^3.15.0:
     prop-types "^15.5.8"
     terra-doc-template "^1.12.0"
     terra-i18n "^2.18.0"
+
+terra-base@^3.22.1:
+  version "3.22.2"
+  resolved "https://registry.yarnpkg.com/terra-base/-/terra-base-3.22.2.tgz#f7bdf52aa26127a87b4b960464b6fd0dd4bd11c8"
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-doc-template "^1.15.1"
+    terra-i18n "^2.21.2"
 
 terra-button-group@^2.20.0:
   version "2.20.0"
@@ -10424,6 +10437,17 @@ terra-doc-template@^1.1.0, terra-doc-template@^1.12.0, terra-doc-template@^1.2.0
     terra-markdown "^2.12.0"
     terra-props-table "^2.15.0"
 
+terra-doc-template@^1.15.1:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/terra-doc-template/-/terra-doc-template-1.15.1.tgz#ab6b71270edf705a38fbd2a92b77a5f756cf72b7"
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    react-syntax-highlighter "^7.0.2"
+    terra-doc-template "^1.15.1"
+    terra-markdown "^2.14.0"
+    terra-props-table "^2.18.1"
+
 terra-form@^2.0.1, terra-form@^2.10.0, terra-form@^2.2.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/terra-form/-/terra-form-2.10.0.tgz#1f368a7f6715358a3f93c8301de779e26f623b79"
@@ -10478,6 +10502,20 @@ terra-i18n@^2.18.0:
     react-intl "^2.4.0"
     terra-doc-template "^1.12.0"
 
+terra-i18n@^2.21.2:
+  version "2.21.2"
+  resolved "https://registry.yarnpkg.com/terra-i18n/-/terra-i18n-2.21.2.tgz#3e634ef956acdf56a6604987f5a60603dcb9e045"
+  dependencies:
+    classnames "^2.2.5"
+    commander "^2.9.0"
+    fs-extra "^6.0.1"
+    glob "^7.1.1"
+    intl "^1.2.5"
+    lodash.startcase "^4.4.0"
+    prop-types "^15.5.8"
+    react-intl "^2.4.0"
+    terra-doc-template "^1.15.1"
+
 terra-icon@^2.0.1, terra-icon@^2.19.0, terra-icon@^2.9.0:
   version "2.19.0"
   resolved "https://registry.yarnpkg.com/terra-icon/-/terra-icon-2.19.0.tgz#2f219e80c425665fc4ecf48b2cfbeb7972281e7c"
@@ -10511,6 +10549,14 @@ terra-markdown@^2.12.0:
   dependencies:
     github-markdown-css "^2.4.1"
     marked "^0.3.6"
+    prop-types "^15.5.8"
+
+terra-markdown@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/terra-markdown/-/terra-markdown-2.14.0.tgz#f382ca001467cb4fb6acc4145ff349e9f9c64b72"
+  dependencies:
+    github-markdown-css "^2.4.1"
+    marked "0.5.0"
     prop-types "^15.5.8"
 
 terra-menu@^3.15.0:
@@ -10573,6 +10619,17 @@ terra-props-table@^2.15.0:
     prop-types "^15.5.8"
     react-docgen "^2.15.0"
     terra-markdown "^2.12.0"
+
+terra-props-table@^2.18.1:
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/terra-props-table/-/terra-props-table-2.18.1.tgz#24866ce75cdf62fe1d1fae51d5cea5fc81aee0aa"
+  dependencies:
+    classnames "^2.2.5"
+    commander "^2.9.0"
+    glob "^7.1.2"
+    prop-types "^15.5.8"
+    react-docgen "^2.15.0"
+    terra-markdown "^2.14.0"
 
 terra-responsive-element@^3.0.0:
   version "3.6.0"

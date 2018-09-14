@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import List from 'terra-list';
 import ToggleSectionHeader from 'terra-toggle-section-header';
 
-class Home extends Component {
+class ToggleSectionHeaderTest extends Component {
   render() {
     return (
       <List>
@@ -17,4 +17,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default ToggleSectionHeaderTest;
